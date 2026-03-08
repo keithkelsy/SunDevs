@@ -35,7 +35,7 @@ Full-stack food ordering system with a NestJS backend API and Next.js frontend. 
 ### 1. Clone and install
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/keithkelsy/SunDevs.git
 cd SunDevs
 
 # Install backend dependencies
