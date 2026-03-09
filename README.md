@@ -176,7 +176,7 @@ curl -X POST http://localhost:3000/orders \
 ## Project Structure
 
 ```
-SunDevs/
+restaurant-ordering-api/
 ├── docker-compose.yml          # MongoDB 7 + Redis 7
 ├── .env.example                # Documented environment variables
 ├── README.md
