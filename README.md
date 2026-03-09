@@ -30,7 +30,7 @@ Full-stack food ordering system with a NestJS backend API and Next.js frontend. 
 - **npm** >= 9
 - **Docker** + **Docker Compose** (for MongoDB and Redis)
 
-## Quick Start (< 10 minutes)
+## Quick Start
 
 ### 1. Clone and install
 
