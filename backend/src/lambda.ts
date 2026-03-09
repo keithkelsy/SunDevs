@@ -3,7 +3,7 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { ExpressAdapter } from '@nestjs/platform-express';
 import { AppModule } from './app.module';
-import express from 'express';
+import * as express from 'express';
 import type { Callback, Context, Handler } from 'aws-lambda';
 
 let cachedServer: Handler;

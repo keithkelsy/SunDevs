@@ -13,7 +13,7 @@ provider:
   memorySize: 512
   timeout: 29
   environment:
-    NODE_ENV: ${self:provider.stage}
+    NODE_ENV: ${self:custom.stageToNodeEnv.${self:provider.stage}, 'development'}
     MONGODB_URI: ${env:MONGODB_URI, 'mongodb://admin:admin123@localhost:27017/sundevs?authSource=admin'}
     REDIS_HOST: ${env:REDIS_HOST, 'localhost'}
     REDIS_PORT: ${env:REDIS_PORT, '6379'}
@@ -32,6 +32,10 @@ functions:
           path: '{proxy+}'
 
 custom:
+  stageToNodeEnv:
+    dev: development
+    prod: production
+    test: test
   serverless-offline:
     httpPort: 3000
     noPrependStageInUrl: true
